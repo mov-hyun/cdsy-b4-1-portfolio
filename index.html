@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="순수 HTML, CSS, JavaScript로 구현한 mov-hyun의 반응형 포트폴리오 웹사이트"
+    />
+    <title>mov-hyun Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <nav class="nav" aria-label="주요 메뉴">
+        <a class="nav__logo" href="#hero" aria-label="처음 화면으로 이동">mov-hyun</a>
+
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-label="메뉴 열기"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="theme-toggle" type="button" aria-label="다크 모드 전환">
+          <span class="theme-toggle__icon" aria-hidden="true">D</span>
+          <span class="theme-toggle__text">Dark</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section reveal" id="hero" aria-labelledby="hero-title">
+        <div class="section__inner hero__inner">
+          <p class="eyebrow">Web Basics Portfolio</p>
+          <h1 id="hero-title">
+            안녕하세요. <span class="accent">mov-hyun</span>입니다.
+          </h1>
+          <p class="hero__lead">
+            HTML, CSS, JavaScript의 기본 동작을 직접 구현하며 성장하는 웹 학습자입니다.
+            이벤트, 상태, DOM 업데이트가 연결되는 과정을 포트폴리오 안에 담았습니다.
+          </p>
+          <p class="hero__typing" aria-live="polite"></p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#projects">프로젝트 보기</a>
+            <a class="button button--secondary" href="#contact">문의하기</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section reveal" id="about" aria-labelledby="about-title">
+        <div class="section__inner about__inner">
+          <div class="about__media">
+            <img
+              src="images/profile.svg"
+              alt="코드를 학습하는 사람을 표현한 포트폴리오 프로필 이미지"
+              width="360"
+              height="360"
+            />
+          </div>
+          <div class="about__content">
+            <p class="eyebrow">About</p>
+            <h2 id="about-title">기본기를 설명할 수 있는 개발을 목표로 합니다.</h2>
+            <p>
+              이 포트폴리오는 라이브러리 없이 브라우저가 제공하는 기본 기능만으로
+              만들었습니다. 시맨틱 HTML로 문서 구조를 세우고, CSS Flexbox와 Grid로
+              반응형 레이아웃을 구성했습니다.
+            </p>
+            <p>
+              JavaScript에서는 사용자 입력과 클릭 이벤트를 상태 변경으로 연결하고,
+              변경된 상태를 기준으로 필요한 DOM만 다시 렌더링합니다.
+            </p>
+            <ul class="about__facts" aria-label="학습 방향">
+              <li>DOM 선택과 이벤트 연결</li>
+              <li>비동기 API 호출과 상태별 UI</li>
+              <li>접근성을 고려한 폼과 네비게이션</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills section reveal" id="skills" aria-labelledby="skills-title">
+        <div class="section__inner">
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-title">사용 기술</h2>
+          <div class="skills__grid">
+            <article class="skill-card">
+              <h3>HTML</h3>
+              <p>시맨틱 태그, 앵커 네비게이션, 폼 label 연결, 접근성 속성을 사용합니다.</p>
+            </article>
+            <article class="skill-card">
+              <h3>CSS</h3>
+              <p>CSS 변수, Flexbox, Grid, 모바일 퍼스트 반응형 레이아웃을 구성합니다.</p>
+            </article>
+            <article class="skill-card">
+              <h3>JavaScript</h3>
+              <p>querySelector, addEventListener, classList, fetch, async/await를 사용합니다.</p>
+            </article>
+            <article class="skill-card">
+              <h3>GitHub API</h3>
+              <p>저장소 데이터를 불러오고 로딩, 에러, 빈 상태를 화면에 표현합니다.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section reveal" id="projects" aria-labelledby="projects-title">
+        <div class="section__inner">
+          <div class="section__heading">
+            <div>
+              <p class="eyebrow">Projects</p>
+              <h2 id="projects-title">GitHub 저장소</h2>
+            </div>
+            <button class="button button--secondary project-retry" type="button" hidden>
+              다시 시도
+            </button>
+          </div>
+
+          <div class="project-filters" aria-label="프로젝트 언어 필터"></div>
+          <div class="project-status" role="status" aria-live="polite"></div>
+          <div class="projects__grid" aria-label="GitHub 프로젝트 목록"></div>
+        </div>
+      </section>
+
+      <section class="contact section reveal" id="contact" aria-labelledby="contact-title">
+        <div class="section__inner contact__inner">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">메시지를 남겨주세요.</h2>
+            <p>
+              폼은 실제 전송 대신 기본 제출 동작을 막고, 입력값 검증 결과와 성공
+              메시지를 화면에 표시합니다.
+            </p>
+          </div>
+
+          <form class="contact-form" novalidate>
+            <div class="form-field">
+              <label for="name">이름</label>
+              <input id="name" name="name" type="text" autocomplete="name" />
+              <p class="form-field__error" id="name-error"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="email">이메일</label>
+              <input id="email" name="email" type="email" autocomplete="email" />
+              <p class="form-field__error" id="email-error"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="message">메시지</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+              <p class="form-field__error" id="message-error"></p>
+            </div>
+
+            <button class="button button--primary" type="submit">보내기</button>
+            <p class="form-success" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="section__inner footer__inner">
+        <p>&copy; 2026 mov-hyun. All rights reserved.</p>
+        <ul class="footer__links" aria-label="소셜 링크">
+          <li><a href="https://github.com/mov-hyun" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="https://github.com/mov-hyun/codyssey-b4-1-portfolio" target="_blank" rel="noreferrer">Repository</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <button class="scroll-top" type="button" aria-label="페이지 맨 위로 이동">Top</button>
+  </body>
+</html>

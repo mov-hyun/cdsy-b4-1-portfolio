@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720" role="img" aria-labelledby="title desc">
+  <title id="title">Portfolio profile illustration</title>
+  <desc id="desc">A simple developer profile illustration with code panels and a person silhouette.</desc>
+  <rect width="720" height="720" fill="#fbfaf7"/>
+  <rect x="90" y="110" width="540" height="390" rx="8" fill="#ffffff" stroke="#ded9cf" stroke-width="8"/>
+  <rect x="90" y="110" width="540" height="72" rx="8" fill="#0f766e"/>
+  <circle cx="132" cy="146" r="10" fill="#fb923c"/>
+  <circle cx="166" cy="146" r="10" fill="#facc15"/>
+  <circle cx="200" cy="146" r="10" fill="#2dd4bf"/>
+  <rect x="140" y="230" width="180" height="22" rx="8" fill="#115e59"/>
+  <rect x="140" y="276" width="250" height="18" rx="8" fill="#ded9cf"/>
+  <rect x="140" y="316" width="210" height="18" rx="8" fill="#ded9cf"/>
+  <rect x="140" y="356" width="280" height="18" rx="8" fill="#ded9cf"/>
+  <circle cx="502" cy="302" r="72" fill="#fb923c"/>
+  <path d="M390 476c18-78 65-116 112-116s94 38 112 116H390z" fill="#0f766e"/>
+  <path d="M258 536h204l36 72H222l36-72z" fill="#24231f"/>
+  <rect x="202" y="604" width="316" height="28" rx="8" fill="#4d493f"/>
+</svg>
