@@ -10,7 +10,7 @@
 
 ## 2. 배포 링크
 
-- GitHub Pages: https://mov-hyun.github.io/codyssey-b4-1-portfolio/
+- GitHub Pages: https://mov-hyun.github.io/cdsy-b4-1-portfolio/
 - GitHub Repository: https://github.com/mov-hyun/codyssey-b4-1-portfolio
 
 ## 3. 사용 기술
